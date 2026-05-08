@@ -1,0 +1,7 @@
+dagster==1.10.10
+SQLAlchemy==1.4.31        
+python-dotenv==1.0.0     
+pytest==8.3.5
+pytest-mock==3.14.0
+dagster-webserver==1.10.10
+psycopg2-binary==2.9.9

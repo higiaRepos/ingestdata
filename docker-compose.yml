@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  vhir-api:
+    build: .
+    container_name: VHIR-api
+    ports:
+      - "4000:4000"
+    environment:
+      DAGSTER_HOME: "/home/juancarlos/Escritorio/higia/repos/vhir/api/tmps"
+      SECRET_KEY: "super_secret_key"
+    volumes:
+      - .:/app  # Para permitir cambios en el código sin reconstruir la imagen
+    restart: always  # Reiniciar el servicio si se cae
